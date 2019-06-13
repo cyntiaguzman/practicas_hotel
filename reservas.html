@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Hotel Alma del Lago</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- <meta name="theme-color" content="#ffffff"> -->
+	<!-- fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
+</head>
+<body class="fondo">
+	<div id="pantalla">
+		<div class="contenedor">
+		<!-- inicia el menu de navegacion -->
+			<nav>
+				<div>
+					<div class="nav-logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo" title="Home"></a>
+					</div>
+					<div class="nav-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="historia.html"  >Historia</a></li>
+							<li><a href="habitaciones.html">Habitaciones</a></li>				
+							<li class="ventanas"><a>Servicios</a>
+
+								<ul class="desplegar">
+									<li><a href="spa.html">SPA</a></li>
+									<li id="submenu"><a href="gastronomico.html">Gastronómico</a></li>
+								</ul>
+							</li>
+							<li><a href="tarifas.html">Tarifas</a></li>
+							<li class="active"><a href="reservas.html">Reservas</a></li>
+							<li><a href="ubicacion.html">Ubicación</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<header>
+			<!--fecha de visita -->
+				<a href="#" class="btn-reserva">RESERVÁ</a>
+				<div class="reserva">
+					
+
+					<label for="fecha_ingreso">LLegada</label>
+					<input type="date" id="fecha_ingreso" name="fecha_ingreso">
+					
+					<label for="fecha_egreso">Salida</label>
+					<input type="date" id="fecha_egreso" name="fecha_egreso">
+					<button class="btn-enviar" type="submit">Reservar</button>
+				</div>
+			</header>
+		
+			
+			<!-- seccion 1-->
+			<section>
+				<article>
+					<!-- <h2>Haga su reserva</h2>	 -->
+					<form action="formulario.php" method="post">
+						<div class="form-group">
+							<label class="left" for="nombre">Nombre y Apellido</label>
+							<input class="completar" class="formulario" type="text" id="nombre" name="nombre">
+						</div>
+						<div class="form-group">
+							<label for="fecha_ingreso">LLegada</label>
+							<input class="completar" type="date" id="fecha_ingreso" name="fecha_ingreso">
+						</div>
+							<label for="fecha_egreso">Salida</label>
+							<input class="completar" type="date" id="fecha_egreso" name="fecha_egreso">
+						<div class="form-group">
+							<label for="causa">Causa del viaje</label> 
+							<div class="opcion">
+								<input type="checkbox" name="causa">Placer 
+								<input type="checkbox" name="causa">Negocios 
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="niños">Viaja con niños</label>
+							<div class="opcion">
+								<input type="checkbox" name="niños">Si 
+								<input type="checkbox" name="niños">No 
+							</div>
+						</div>
+						<div class="form-group">
+							<select class="completar" name="" id="">
+								<option value="hab1">Master Suite</option>
+								<option value="hab2">Delux Suite</option>
+								<option value="hab3">Junior Suite</option>
+								<option value="hab4">Habitación Superior</option>
+								<option value="hab5">Classic lago </option>
+								<option value="hab6">Classic</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="ofertas">¿Le gustaria recibir ofertas de este sitio?</label>
+							<div class="opcion">
+								<input type="checkbox" name="ofertas">Si 
+								<input type="checkbox" name="ofertas">No
+							</div> 
+						</div>
+						<div class="form-group">
+							<label for="mail">Mail</label>
+							<input class="completar" type="text" id="mail" name="mail">
+						</div>
+						<div class="form-group">
+							<label for="consulta">Escribe tu consulta</label> 
+							<textarea class="completar" name="consulta" id="consulta" cols="30" rows="10"></textarea>
+							<input class="btn-enviar" type="submit" value="Enviar">
+						</div>
+					</form>	
+				</article>
+			</section>
+		
+			<footer>
+				<div>
+					<p>Av. Bustillo km 1,151 (R8400AEE) Bariloche. Patagonia. Argentina</p>
+					<p>Reservas <a href="tel:294 4521500">+54 (294) 4521500</a></p>
+					<p><a href="mailto:info@almasuites.com.ar">info@almasuites.com.ar</a></p>
+				</div>
+				<!--redes sociales -->
+				<ul>
+					<li><a href=""><img src="img/logos-redes/facebook.svg" alt="" width=""></a></li>
+					<li><a href=""><img src="img/logos-redes/instagram.svg" alt="" width=""></a></li>
+					<li><a href=""><img src="img/logos-redes/twitter.svg" alt="" width=""></a></li>
+				</ul>
+			</footer>
+				
+		</div> <!--cierra el contenedor -->
+	</div> <!-- cierra el pantalla -->
+		<!-- ventana modal -->
+		<div class="modal-aside">
+		
+			<div class="contenedor">
+				<aside>
+					
+					
+					<a href="#" class="btn-promociones">PROMOCIONES</a>
+					<div id="promociones-scroll" class="promociones">
+					
+					
+
+						<img class=promo-1 src="img/promociones/ahora_12.jpg" alt="" height="100"> 
+						<img class=promo-2 src="img/promociones/almaday_spa_2017.jpg" alt="" height="100">
+						<img class=promo-3 src="img/promociones/andes_lineas_aereas_2018.jpg" alt="" height="100">
+						<img class=promo-4 src="img/promociones/banco_patagonia.jpg" alt="" height="100">
+						<img class=promo-5 src="img/promociones/iron_man_2018.jpg" alt="" height="100">
+						<img class=promo-6 src="img/promociones/banco_hsbc.jpg" alt="" height="100">
+						<img class=promo-7 src="img/promociones/promo_cena_bienvenida.jpg" alt="" height="100">
+						<img class=promo-8 src="img/promociones/tax_esp.jpg" alt="" height="100">
+
+						<!-- <a href="#" class=promo-1>Promo 1</a>
+						<a href="#" class=promo-2>Promo 2</a>
+						<a href="#" class=promo-3>Promo 3</a>
+						<a href="#" class=promo-4>Promo 4</a>
+						<a href="#" class=promo-5>Promo 5</a>
+						<a href="#" class=promo-6>Promo 6</a>
+						<a href="#" class=promo-7>Promo 7</a>
+						<a href="#" class=promo-8>Promo 8</a> -->
+					</div>
+				</aside>
+			</div> <!--  cierra contenedor 
+		</div> <!-- cierra modal-aside --> 
+	<a href="#subir" class="btn-subir">Subir</a>
+</body>
+</html>

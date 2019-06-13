@@ -1,0 +1,1036 @@
+
+/*estilos grales*/
+	* {
+		box-sizing: border-box;
+		}
+	body {
+	font-family: "Fira Sans", sans-serif; 
+	font-size: 20px;
+	margin: 0px;
+	/*background-image:url("../img/hotel.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;*/
+	/*background-color: #8ABBCB;*/
+
+	}
+	
+	h1 {
+
+	font-size: 30px;
+	font-weight: 700;
+	/*width: 210px;*/
+	margin: 0px auto;
+	
+		}
+	h2{
+		margin-bottom: 5px;
+		font-family: sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	h3 {
+		margin-bottom: 5px;
+		font-family: sans-serif;
+		font-size: 17px;
+		font-weight: 600;
+
+	}
+	h4 {
+		font-size: 15px;
+
+	}
+
+	p{
+		font-size: 12px;
+		font-weight: 600;
+	}
+	img{
+		max-width: 100% 
+	}
+	strong {
+		text-decoration: none;
+
+	}
+	a {
+		text-decoration: none;
+	}
+
+/*		clases epeciales*/
+	.active a{
+		/*border-bottom: solid 1px midnightblue;*/
+		background-color: #8ABBCB;
+		color: #004C6C;
+	}
+	#scroll {
+
+		overflow-y:scroll;
+		height: 220px;
+		scroll-behavior: none;
+	}
+		#scroll::-webkit-scrollbar {
+			display:none;
+			width: 7px;
+			
+		}
+		#scroll::-webkit-scrollbar : hover {
+			display: block;
+		}
+
+		#scroll::-webkit-scrollbar-track {
+			background-color: #ccc;
+			
+		}
+		#scroll::-webkit-scrollbar-thumb {
+			background-color: #666;
+			
+		}
+		#scroll::-webkit-scrollbar-button {
+			height: 10px;
+			border-radius: 50%;
+			background-color: ;
+		}
+
+
+	.max-widht {
+		/*max-width: 100%*/
+	}
+
+	.btn-enviar {
+		display: block;
+		width: 160px;
+		height: 30px;
+		position: relative;
+		float: left;
+		margin-top: 10px;
+		
+		text-decoration: none;
+		text-align: center;
+		background-color: #004C6C;
+		/*padding: 15px 15px 0px 15px;*/
+		color:white; 
+		font-size: 15px;
+		font-weight: 800;
+		border-radius: 25px 25px 25px 25px; 
+
+	}
+	.btn-promociones{
+		display: block;
+		width: 150px;
+		height: 50px;
+		position: fixed;
+		z-index: 999;
+		text-decoration: none;
+		text-align: center;
+		background-color: #004C6C;
+		padding: 15px 15px 0px 15px;
+		color:white; 
+		font-size: 15px;
+		font-weight: 800;
+		border-radius: 25px 25px 0px 0px; 
+		transform: rotate(-90deg);
+		/*border:solid;*/
+		right: -75px;
+		top:50%;
+		-webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+		transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+		z-index: 999999;
+	}
+
+	.btn-promociones:hover {
+		right: -50px;
+	}
+	.btn-promociones:active {
+
+
+	}
+
+	.btn-reserva {
+		display: block;
+		width: 150px;
+		height: 50px;
+		position: fixed;
+		z-index: 999;
+		text-decoration: none;
+		text-align: center;
+		background-color: #004C6C;
+		padding: 15px 15px 0px 15px;
+		color:white; 
+		font-size: 15px;
+		font-weight: 800;
+		border-radius: 25px 25px 0px 0px; 
+		transform: rotate(90deg);
+		/*border:solid;*/
+		left:  -75px;
+		top:50%;
+		-webkit-transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+		transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+		z-index: 9999999;
+	}
+	.btn-reserva:hover {
+		left: -50px;
+	}
+
+	.btn-subir{
+		display: block;
+		width: 30%;
+		height: 50px;
+		position: fixed;
+
+
+		text-decoration: none;
+		text-align: center;
+		background-color: #004C6C;
+		padding-top: 15px;
+		color:white; 
+		font-size: 15px;
+		font-weight: 800;
+		border-radius: 25px 25px 0px 0px; 
+		width: 130px;
+		/*border:solid;*/
+		bottom: -25px;
+		transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+		z-index: 999999;
+	}
+	.btn-subir:hover {
+		bottom: 0px;
+	}
+
+
+	#pantalla{
+		width: 100%;
+		height: auto;
+		position: relative;
+		float: left;
+	}
+	.contenedor{
+		width: 1170px;
+		height: auto;
+		position: relative;
+		margin: 0px auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		overflow: hidden;
+		max-width: 100%;
+		z-index: 999;
+
+	}
+	
+	/*.desplegar{
+		display: none;
+	}*/
+
+	
+
+	/*estilos particulares del sitio*/
+	nav {
+		width: 100%;
+		height: 120px;
+		margin-top: 5px;
+		position: relative;
+		float: left;	
+		z-index: 99999;
+		left: 0px;
+		right: 0px;	
+		
+		font-weight:800;
+		
+		overflow: hidden;
+
+		}
+
+		nav ul {
+			margin-top: 0px;
+			padding: 0px;
+			list-style: none;
+			/*display: block;*/
+
+			}
+			nav ul li{
+				/*display: inline-block;*/
+				position: relative;
+				float: left;
+				/*max-width: 14%;*/
+				
+				/*background-color: silver;*/
+				/*margin:2px ;*/
+
+				
+				}
+			
+				nav ul li a {	
+					display: block;
+					/*width: 30%;*/
+					height: 50px;
+					text-decoration: none;
+
+					background-color: #004C6C;
+					color:white; 
+					font-size: 17px;
+					font-weight: 800;
+					/*border:solid 2px;*/
+
+				}
+
+				nav ul li a:hover {
+					background-color: #747476; 
+					/*color: #004C6C;*/
+				}	
+				
+
+				nav ul li ul li {
+					background-color: red;
+					position: absolute;
+				}
+				nav li a {
+					display: block;
+				}
+
+				nav > li {
+					float: left;
+				}
+				nav li ul {
+					display: none;
+					position: absolute;
+					margin-bottom: 10px;
+				}
+				#submenu {
+					left: 145px;
+				}
+				nav li:hover > ul {
+					display: block;
+				}
+
+
+
+
+				
+		.nav-logo{
+				/*padding: 0px;
+				margin: 0px;*/
+				max-width: 20%;
+				position: absolute;
+				float: left;
+				background-color: white;
+				/*border:solid 2px;*/
+			}
+			.nav-logo figure {
+			/*	max-width: 300%;*/
+			}
+
+		.nav-menu{
+			margin-top: 20px;
+			max-width: 100%;
+			/*position: relative;*/
+			float:right;
+			/*padding: 5px 0px 5px 5px;*/
+			/*margin: 0;*/
+			text-align: center;
+			/*border:solid 2px;*/
+			}
+			
+
+			.nav-menu li{
+
+				/*max-width: 14%;*/
+				/*margin-bottom: 30px;*/
+				font-family: "Fira Sans", italic;
+			}
+				.nav-menu li a{
+					display: block;
+
+
+					/*border: solid;*/
+					/*border-radius: 0px 0px 25px 25px; */
+					width: 145px;
+					/*border:solid;*/
+
+					/*margin-left: 25px;*/
+					/*margin-right: 25px;*/
+					padding: 15px 5px;
+				}
+				/*li.desplegar{
+					display: none;
+					position: absolute;
+					top: 100%;
+					right: 29%;
+				}
+				}
+			li.ventanas:hover ~ li.desplegar {
+				display: block;*/
+				
+			}
+	
+	header {
+		width: 30%;
+		height: 190px;
+		margin-bottom: 15px;
+		position: fixed;
+		top: 40%;
+		left: -350px;
+		bottom: 0;
+		/*opacity: 0;*/
+
+		/*float: left;*/
+		/*top: 215px;*/
+		/*background-color: lightblue;*/
+		/*background-color: rgba(0, 50, 100, .7);*/
+		background-color: #004C6C;
+		/*box-shadow: 3px 3px 3px -2px;*/
+		/*margin-top: 100px;*/
+		
+		/*background-color: midnightblue;*/
+		/*padding: 10px;*/
+		/*margin-top: 30px;*/
+		/*border:solid 2px orange;*/
+		transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		z-index: 99999;
+		overflow: hidden;
+		}
+		header ul {
+			position: relative;
+			float: right;
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			/*display: block;*/
+		}
+			header ul li a:hover {
+				background-color: midnightblue; 
+				color: navajowhite;
+			}
+
+			div label {
+				display: block;
+				text-align: center;
+				width: 160px;
+				height: auto;
+				font-family: 15px;
+			}
+			div input {
+				width: 160px;
+				height: auto;
+				right: 0;
+				left: 0;
+			}
+			div.reserva {
+			margin-bottom: 15px;
+			position: fixed;
+			background-color: #004C6C;
+			color: white;
+
+			top: 35%;
+			left: -900px;
+			bottom: 120px;
+			width: 260px;
+			height: 190px;
+			margin: 15px;
+			padding-top: 15px;
+			padding-left:45px;
+			/*opacity: 0;*/
+
+			background-color: rgba(46, 34, 30, 15, 0.4);
+			/*z-index: 999999;*/
+			transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+		
+			overflow: hidden;
+			
+		}
+
+
+		a.btn-reserva:focus ~ div.reserva {
+			opacity: 1;
+			left: 100px;
+			z-index: 999999;
+		}
+		div.reserva:focus {
+			left: 100px;
+			z-index: 999999;
+		}
+		div.reservas:hover {
+			left: 100px;
+
+		}
+		
+	section {
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+		position: relative;
+		float: left;
+		overflow: hidden;
+		/*border:solid 2px red;*/
+		/*padding: 15px;*/
+		/*background-color: rgba(200,200,200,1);*/
+		/*background-image: url(.."img/hotel.jpg");*/
+		/*box-shadow: 3px 3px 3px -2px;*/
+		/*margin: 0px auto;*/
+		/*background-color: transparent;*/
+		overflow: hidden;
+		}
+		section.total {
+			min-width: 100%;
+			background-color: rgba(200, 200, 200, .5);
+			box-shadow: 3px 3px 3px -2px;
+		}
+		section.pantalla-completa {
+			top: -125px;
+			margin-bottom: -270px
+		}
+		section article    {
+			/*font-family: serif;*/
+
+			font-size: 20px;
+			font-weight: 500;
+
+		}
+			
+			div.text, div.text2, div.text3{
+				/*margin:15px;*/
+				z-index: 999999;
+				padding: 15px;
+				/*padding-right: 15px;*/
+				width: 50%;
+				height: 180px;
+				position: relative;
+				float: right;
+				right: 20px;
+				margin-top: 70px;
+				margin-bottom: 120px;
+				margin-left: 47%;
+				/*border:solid;*/
+				background-color: rgba(200, 200, 200, .5);
+				box-shadow: 3px 3px 3px -2px;
+			}
+			div.text2 {
+				width: 97%;
+				height: auto;
+				margin: -3px;
+				margin-bottom: 15px;
+				margin-top: -50px;
+				position: relative;
+				float: right;
+				/*border:solid 2px;*/
+
+				background-color: transparent;
+				box-shadow: none;
+				}
+			div.text3 {
+				top: 80px;
+
+			}
+
+				section article h2, h3, h4 {
+					text-align: center;
+					margin: 0px auto;
+					margin-bottom: 2%;
+				}
+				section article p {
+					text-align: center;
+				}
+			/*section article gastronomico*/
+			#bistro,
+			#terra,
+			#service {
+				top:0px;
+				width: 100%;
+				height: 100vh;
+				position: relative;
+				float: left;
+			}
+
+			#bistro {
+				background-image:url("../img/servicios/gastronomico/mitico/tn_mitico_02.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			#terra {
+				background-image:url("../img/servicios/gastronomico/terra/tn_terra_02.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			 #service {
+				background-image:url("../img/servicios/gastronomico/servicio_cuarto/servicio_cuarto_03.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			/*section article habitaciones*/
+			#habitacion1,
+			#habitacion2,
+			#habitacion3,
+			#habitacion4,
+			#habitacion5,
+			#habitacion6  {
+				top:0px;
+				width: 100%;
+				height: 100vh;
+				position: relative;
+				float: left;
+			}
+
+			#habitacion1 {
+				background-image:url("../img/habitaciones/master/master_01.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			#habitacion2 {
+				background-image:url("../img/habitaciones/deluxe/deluxe_01.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			#habitacion3 {
+				background-image:url("../img/habitaciones/junior/tn_junior_01.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			#habitacion4 {
+				background-image:url("../img/habitaciones/superior/tn_superior_02.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			#habitacion5 {
+				background-image:url("../img/habitaciones/classic_lago/classic_lago_01.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			#habitacion6 {
+				background-image:url("../img/habitaciones/classic/tn_classic_01.jpg");
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			
+
+			div.galeria {
+				
+				}
+			div.galeria img{
+				max-width: 100%;
+				height: auto;
+				position:fixed;
+				/*margin-top: 2px;*/
+				top:0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				opacity: 0;
+				min-width:100%;
+				min-height:100%;
+				/*float: left;*/
+				/*border:solid;*/
+				/*margin: 1%;*/
+				}
+			div.galeria a {
+				margin: 5px;
+				/*margin-top: 0;*/
+				bottom: 30px;
+				left: 35%;
+				position: relative;
+				float: left;
+				/*border:solid 2px yellow;*/
+				font-size: 10px;
+				z-index: 99999999;
+			}
+			img.img1 {
+				width: 50px;
+				/*height: auto;*/
+			}
+			a.img_1:hover ~ img.img_1 {
+				opacity: 1;
+			}
+			a.img_2:hover ~ img.img_2 {
+				opacity: 1;
+			}
+			a.img_3:hover ~ img.img_3 {
+				opacity: 1;
+			}
+			a.img_4:hover ~ img.img_4 {
+				opacity: 1;
+			}
+			a.img_5:hover ~ img.img_5 {
+				opacity: 1;
+			}
+			a.img_6:hover ~ img.img_6 {
+				opacity: 1;
+			}
+			a.img_7:hover ~ img.img_7 {
+				opacity: 1;
+			}
+			a.img_8:hover ~ img.img_8 {
+				opacity: 1;
+			}
+			a.img_9:hover ~ img.img_9 {
+				opacity: 1;
+			}
+			a.img_10:hover ~ img.img_10 {
+				opacity: 1;
+			}
+			a.img_11:hover ~ img.img_11 {
+				opacity: 1;
+			}
+			a.img_12:hover ~ img.img_12 {
+				opacity: 1;
+			}
+
+			
+			div.galeria img.img_1 {
+				opacity: 1;
+			}
+		#conthab {
+			margin-top: 10%;
+		}
+
+		/*section article h2 {
+			margin: 40px;
+			font-size: 25px;
+			font-weight: 700;
+		}*/
+		section article ul {
+			max-width: 400px;
+			list-style: none;
+		}
+		
+			section article ul li {
+				font-size: 15px;
+				/*font-family: serif;*/
+				font-weight: 500;
+			}
+
+		/*spa */
+		div.menu-tratamientos {
+			width: 100%;
+			height: auto;
+			position: relative;
+			float: left;
+			/*background-color: rgba(200, 200, 200, .5);*/
+			/*padding: 2%;*/
+			/*box-shadow: 3px 3px 3px -2px;*/
+		}
+		div.menu-tratamientos h2 {
+			width: 100%;
+			height: auto;
+			background-color: rgba(200, 200, 200, .5);
+			padding: 2%;
+			box-shadow: 3px 3px 3px -2px;
+
+		}
+		div.tratamientos-left {
+			width: 40%;
+			max-height: 400px;
+			margin:5%;
+			position: relative;
+			float: left;
+			background-color: rgba(200, 200, 200, .5);
+			box-shadow: 3px 3px 3px -2px;
+			padding: 2%;
+
+		}
+		div.tratamientos-right {
+			width: 40%;
+			max-height: 500px;
+			margin:5%;
+			position: relative;
+			float: right;
+			background-color: rgba(200, 200, 200, .5);
+			box-shadow: 3px 3px 3px -2px;
+			padding: 2%;
+
+		}
+
+		/*reserva*/
+		.fondo {
+			background-image:url("../img/hotel.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size:cover;
+			}
+		form {
+			width: 40%;
+			position: relative;
+			float: left;
+			left: 30%;
+			/*border:solid;*/
+			padding: 15px;
+			background-color: rgba(200, 200, 200, .6);
+			box-shadow: 3px 3px 3px -2px;
+
+		}
+		form input {
+			
+			left: 25%;
+			width: 10%;
+			
+		}
+		.completar {
+			left: 25%;
+			width: 100%;
+		}
+		.opcion {
+			text-align: center;
+		}
+		form label {
+			text-align: center;
+			width: 100%;
+			
+		}
+
+		div.form-group {
+			width: 100%;
+			position: relative;
+			float: left;
+
+		}
+
+		/*ubicacion*/
+		div.mapa {
+			max-width: 50%;
+			height: auto;
+			position:absolute;
+			float: left;
+			/*margin-top: 2px;*/
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			min-width:100%;
+			min-height:100%;
+		}
+		table {
+			font-size: 14px;
+			font-weight: 600;
+			height: auto;
+			position:absolute;
+			float: left;
+			margin-top: 17px;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 30px;
+			min-width: 40%;
+			min-height:100%;
+			/*background-color: rgba(200, 200, 200, .5);*/
+			/*box-shadow: 3px 3px 3px -2px;*/
+		}
+		th {
+			padding: 10px;
+			/*border:solid;*/
+		/*	background-color: rgba(200, 200, 200, .5);
+			box-shadow: 3px 3px 3px -2px;*/
+		}
+
+
+		
+	aside {
+		margin: 0px auto;
+		padding: 0px;
+		width: 45%;
+		height: auto;
+		margin-bottom: 15px;
+		z-index: 99;
+		
+		position: absolute;
+		/*float: right;*/
+		/*right: -100px;*/
+		box-shadow: 3px 3px 3px -2px;
+		/*overflow: hidden;*/
+		/*background-color: pink;*/
+		
+		/*background-color: midnightblue;*/
+		padding: 0px auto;
+		/*background-color: rgba(0, 50, 100, .7);*/
+		/*border:solid;*/
+		overflow: hidden;
+
+	}
+		aside div img {
+			position: relative;
+			float: left;
+			margin:0px auto;
+			width: 300px;
+
+			height: auto;
+			display: block;
+			
+			margin: 5px 130px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			/*border:solid  red;*/
+		}
+		/*aside div img:hover {
+			max-width: 200px;
+			height: auto;
+			position: absolute;
+			z-index: 100;
+		} 
+		/*div.promociones img {
+			display: block;
+			max-width: 100px;
+			position: relative;
+			float: left;
+			border:solid 2px;
+		}*/
+		aside div img {
+			display: block;
+			/*max-width: 100px;*/
+			/*height: auto;*/
+			/*position: relative;*/
+			/*float: initial;*/
+			/*border:solid 2px;*/
+			margin: 5px 130px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			/*overflow: hidden;*/
+		}
+
+
+		
+	/*div.promociones {*/
+		/*display: none;*/
+		
+
+		div.modal-aside {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			/*opacity: 0;*/
+			/*overflow: hidden;*/
+			/*width: 50%;*/
+			/*height: auto;*/
+			/*margin: 100px auto;*/
+			/*background-color: rgba(34, 30, 15, 0.4);*/
+			z-index: 999999;
+			pointer-events: none;
+		}
+		div.promociones {
+			width: 45%;
+			height: auto;
+			position: fixed;
+			top: 0;
+			right: -1000px;
+			bottom: 0;
+			opacity: 0;
+			
+			margin: 10px auto;
+			/*background-color: rgba(34, 30, 15, 0.4);*/
+			z-index: 999999;
+			transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+			/*opacity: 0;*/
+			overflow: hidden;
+			overflow-y:scroll;
+			/*pointer-events: none;*/
+		}
+
+		a.btn-promociones {
+			pointer-events:auto;
+			opacity: 1;
+		}
+		a.btn-promociones:focus ~ div.promociones{
+			right: 0;
+			opacity: 1;
+			pointer-events:auto;
+		}
+		
+			/*a.promo-1, a.promo-2, a.promo-3, a.promo-4,
+			a.promo-5, a.promo-6, a.promo-7, a.promo-8 {
+				position: relative;
+				float: left;
+				text-decoration: none;
+
+
+				font-family: "fira-sans";
+				font-size: 20px;
+				display: inline-block;
+				background-color: blue;
+				color: white;
+				margin: 5px;
+			}*/
+		/*div.promociones img:hover {*/
+			/*max-width: 200px;*/
+			/*height: 200px;
+			position: absolute;
+			z-index: 100;`
+			}
+*/		
+		
+
+		
+
+	footer { 
+		width: 100%;
+		height: 130px;
+		margin-bottom: 15px;
+		position: relative;
+		float: left;
+		/*border:solid 2px;*/
+
+		background-color: rgba(200, 200, 200, .6);
+		box-shadow: 3px 3px 3px -2px;
+		overflow: hidden;
+		clear: both;
+	}
+	footer div {
+		width: 50%;
+		height: auto;
+		margin-top: 10px;
+		margin-left: 20px;
+		position: relative;
+		float: left;
+
+	}
+
+		p a {
+			text-decoration: none;
+			color:black;
+		}
+		footer ul {
+			width: 5%;
+			height: auto;
+			position: relative;
+			float: right;
+			left: 10px;
+			margin-top: 20px;
+			padding: 0px;
+			list-style: none;
+			display: block;
+		}
+
+		footer ul li {
+			width: 42%;
+			height: auto;
+			position: relative;
+			float: left;
+			top: -10px;
+			left: -2px;
+			margin:4px;
+
+		}
+		
+

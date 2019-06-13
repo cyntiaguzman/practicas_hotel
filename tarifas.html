@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Hotel Alma del Lago</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- <meta name="theme-color" content="#ffffff"> -->
+	<!-- fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
+
+</head>
+<body class="fondo" id="subir">
+	<div id="pantalla">
+		<div class="contenedor">
+		<!-- inicia el menu de navegacion -->
+			<nav>
+				<div>
+					<div class="nav-logo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="logo" title="Home" >
+						</a>
+					</div>
+					<div class="nav-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="historia.html" >Historia</a></li>
+							<li><a href="habitaciones.html">Habitaciones</a></li>				
+							<li class="ventanas"><a>Servicios</a>
+
+								<ul class="desplegar">
+									<li><a href="spa.html">SPA</a></li>
+									<li id="submenu"><a href="gastronomico.html">Gastronómico</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="tarifas.html">Tarifas</a></li>
+							<li><a href="reservas.html">Reservas</a></li>
+							<li><a href="ubicacion.html">Ubicación</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<header>
+			
+				<!--fecha de visita -->
+				<a href="#" class="btn-reserva">RESERVÁ</a>
+				<div class="reserva">
+					
+
+					<label for="fecha_ingreso">LLegada</label>
+					<input type="date" id="fecha_ingreso" name="fecha_ingreso">
+					
+					<label for="fecha_egreso">Salida</label>
+					<input type="date" id="fecha_egreso" name="fecha_egreso">
+					<button class="btn-enviar" type="submit">Reservar</button>
+				</div>
+			</header>
+		<!-- </div> 	</div> cierra contenedor  -->
+					
+			<!-- seccion 1-->
+			<section class="total">
+				<article>
+					<table>
+						<tr>
+							<th>TIPO DE HABITACIÓN</th>
+							<th>TEMPORADA BAJA*</th>
+							<th>TEMPORADA ALTA</th>
+						</tr>
+						<tr>
+							<th>CLASSIC</th>
+							<th>ARS 3136</th>
+							<th>ARS 3680</th>
+						</tr>
+						<tr>
+							<th>CLASSIC LAGO</th>
+							<th>ARS 3952</th>
+							<th>ARS 4640</th>
+						</tr>
+						<tr>
+							<th>SUPERIOR</th>
+							<th>ARS 2960</th>
+							<th>ARS 3488</th>
+						</tr>
+						<tr>
+							<th>JUNIOR SUITE</th>
+							<th>ARS 4528</th>
+							<th>ARS 5328</th>
+						</tr>
+						<tr>
+							<th>DELUXE SUIT</th>
+							<th>ARS 5344</th>
+							<th>ARS 6288</th>
+						</tr>
+						<tr>
+							<th>MASTER SUITE</th>
+							<th>ARS 6160</th>
+							<th>ARS 7248</th>
+						</tr>
+					</table>					
+				</article>
+				<article>
+					<div class="text" id="scroll">
+						<h2>Política de cancelación</h2>
+						<p>Las reservas podrán ser canceladas sin cargo hasta 5 días antes de la fecha del check in. Transcurrido este plazo se cobrará una noche de alojamiento como penalidad.</p>
+						<h2>Política de menores</h2>
+						<p>INFANTE: 0 a 2 años – sin cargo compartiendo habitación con 2 adultos. Se adicionará cuna en habitación, a pedido y sujeto a disponibilidad.</p>
+						<p>MENOR: 3 a 12 años.</p>
+						<p>ADULTO: 13 años en adelante.</p>
+					</div>
+				</article>
+				<article >
+					<div class="text2">
+						<p>Tarifas expresadas en Pesos Argentinos.</p>
+						<p>Las tarifas son por habitación y por noche.</p>
+						<p>(*) El hotel podrá cerrar en fechas de temporada baja.</p>
+						<h3>Temporadas</h3>
+						<p>Temporada Baja: después de semana santa y hasta el 14 de diciembre.</p>
+						<p>Temporada Alta: desde el 15 de diciembre hasta semana santa inclusive.</p>
+					</div>
+				</article>
+			</section>
+		<!-- <div class="contenedor"> <!-- contenedor> --> -->
+			<footer>
+				<div>
+					<p>Av. Bustillo km 1,151 (R8400AEE) Bariloche. Patagonia. Argentina</p>
+					<p>Reservas <a href="tel:294 4521500">+54 (294) 4521500</a></p>
+					<p><a href="mailto:info@almasuites.com.ar">info@almasuites.com.ar</a></p>
+				</div>
+				<!--redes sociales -->
+				<ul>
+					<li><a href=""><img src="img/logos-redes/facebook.svg" alt="" width=""></a></li>
+					<li><a href=""><img src="img/logos-redes/instagram.svg" alt="" width=""></a></li>
+					<li><a href=""><img src="img/logos-redes/twitter.svg" alt="" width=""></a></li>
+				</ul>
+			</footer>
+				
+		</div> <!--cierra el contenedor -->
+	</div> <!-- cierra el pantalla -->
+		<!-- ventana modal -->
+		<div class="modal-aside">
+		
+			<div class="contenedor">
+				<aside>
+					
+					
+					<a href="#" class="btn-promociones">PROMOCIONES</a>
+					<div id="promociones-scroll" class="promociones">
+					
+					
+
+						<img class=promo-1 src="img/promociones/ahora_12.jpg" alt="" height="100"> 
+						<img class=promo-2 src="img/promociones/almaday_spa_2017.jpg" alt="" height="100">
+						<img class=promo-3 src="img/promociones/andes_lineas_aereas_2018.jpg" alt="" height="100">
+						<img class=promo-4 src="img/promociones/banco_patagonia.jpg" alt="" height="100">
+						<img class=promo-5 src="img/promociones/iron_man_2018.jpg" alt="" height="100">
+						<img class=promo-6 src="img/promociones/banco_hsbc.jpg" alt="" height="100">
+						<img class=promo-7 src="img/promociones/promo_cena_bienvenida.jpg" alt="" height="100">
+						<img class=promo-8 src="img/promociones/tax_esp.jpg" alt="" height="100">
+
+						<!-- <a href="#" class=promo-1>Promo 1</a>
+						<a href="#" class=promo-2>Promo 2</a>
+						<a href="#" class=promo-3>Promo 3</a>
+						<a href="#" class=promo-4>Promo 4</a>
+						<a href="#" class=promo-5>Promo 5</a>
+						<a href="#" class=promo-6>Promo 6</a>
+						<a href="#" class=promo-7>Promo 7</a>
+						<a href="#" class=promo-8>Promo 8</a> -->
+					</div>
+				</aside>
+			</div> <!--  cierra contenedor-->
+		</div> <!-- cierra modal-aside --> 
+	<a href="#subir" class="btn-subir">Subir</a>
+
+</body>
+</html>
+
+
+

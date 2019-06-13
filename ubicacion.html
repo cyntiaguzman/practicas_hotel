@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Hotel Alma del Lago</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- <meta name="theme-color" content="#ffffff"> -->
+	<!-- fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" type="text/css">
+
+</head>
+<body class="fondo">
+<!-- inicia el menu de navegacion desplegable -->
+	<div id="pantalla">
+		<div class="contenedor">
+		<!-- inicia el menu de navegacion -->
+			<nav>
+				<div>
+					<div class="nav-logo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="logo" title="Home" >
+						</a>
+					</div>
+					<div class="nav-menu">
+						<ul>
+							<li ><a href="index.html">Home</a></li>
+							<li><a href="historia.html"  >Historia</a></li>
+							<li><a href="habitaciones.html">Habitaciones</a></li>				
+							<li class="ventanas"><a>Servicios</a>
+
+								<ul class="desplegar">
+									<li><a href="spa.html">SPA</a></li>
+									<li id="submenu"><a href="gastronomico.html">Gastronómico</a></li>
+								</ul>
+							</li>
+							<li><a href="tarifas.html">Tarifas</a></li>
+							<li><a href="reservas.html">Reservas</a></li>
+							<li class="active"><a href="ubicacion.html">Ubicación</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+	
+			<header>
+	
+				<!--fecha de visita -->
+				<a href="#" class="btn-reserva">RESERVÁ</a>
+				<div class="reserva">
+					
+
+					<label for="fecha_ingreso">LLegada</label>
+					<input type="date" id="fecha_ingreso" name="fecha_ingreso">
+					
+					<label for="fecha_egreso">Salida</label>
+					<input type="date" id="fecha_egreso" name="fecha_egreso">
+					<button class="btn-enviar" type="submit">Reservar</button>
+				</div>
+			</header>
+	
+			<!-- seccion 1-->
+			<section>
+				<article>
+					<div class="text">
+
+						<p>Excelente ubicación en un entorno único. San Carlos de Bariloche se ubica sobre la margen sur del Lago Nahuel Huapi, rodeada por el imponente parque homónimo, a unos 41� Latitud Sur y a 800 mts sobre el nivel del mar. Ciudad de montaña cuya trayectoria, desarrollo y singulares atractivos la han convertido en la puerta de entrada a la Patagonia Argentina. </p> 
+						<p>Las coordenadas son: 41� 7� 54� S - 71� 19� 23� W.</p>
+				</article>
+				<div class="mapa">
+					<article><iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d6010.296274914361!2d-71.322933!3d-41.13129200000001!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x961a70be0c50d555%3A0x2ea720ebc92b4d65!2sAlma+del+Lago+Suites+%26+SPA%2C+Av.+Bustillo+Km+1.151+(Camino+R8400AEE%2C+Cto+Chico%2C+San+Carlos+de+Bariloche%2C+R%C3%ADo+Negro%2C+Argentina!3m2!1d-41.1317106!2d-71.3230719!5e0!3m2!1ses!2sus!4v1501303870993" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></article>
+				</div>
+			</section>
+			<footer>
+				<div>
+					<p>Av. Bustillo km 1,151 (R8400AEE) Bariloche. Patagonia. Argentina</p>
+					<p>Reservas <a href="tel:294 4521500">+54 (294) 4521500</a></p>
+					<p><a href="mailto:info@almasuites.com.ar">info@almasuites.com.ar</a></p>
+				</div>
+				<!--redes sociales -->
+				<ul>
+					<li><a href=""><img src="img/logos-redes/facebook.svg" alt="" width=""></a></li>
+					<li><a href=""><img src="img/logos-redes/instagram.svg" alt="" width=""></a></li>
+					<li><a href=""><img src="img/logos-redes/twitter.svg" alt="" width=""></a></li>
+				</ul>
+			</footer>
+				
+		</div> <!--cierra el contenedor -->
+	</div> <!-- cierra el pantalla -->
+		<!-- ventana modal -->
+		<div class="modal-aside">
+		
+			<div class="contenedor">
+				<aside>
+					
+					
+					<a href="#" class="btn-promociones">PROMOCIONES</a>
+					<div id="promociones-scroll" class="promociones">
+					
+					
+
+						<img class=promo-1 src="img/promociones/ahora_12.jpg" alt="" height="100"> 
+						<img class=promo-2 src="img/promociones/almaday_spa_2017.jpg" alt="" height="100">
+						<img class=promo-3 src="img/promociones/andes_lineas_aereas_2018.jpg" alt="" height="100">
+						<img class=promo-4 src="img/promociones/banco_patagonia.jpg" alt="" height="100">
+						<img class=promo-5 src="img/promociones/iron_man_2018.jpg" alt="" height="100">
+						<img class=promo-6 src="img/promociones/banco_hsbc.jpg" alt="" height="100">
+						<img class=promo-7 src="img/promociones/promo_cena_bienvenida.jpg" alt="" height="100">
+						<img class=promo-8 src="img/promociones/tax_esp.jpg" alt="" height="100">
+
+						<!-- <a href="#" class=promo-1>Promo 1</a>
+						<a href="#" class=promo-2>Promo 2</a>
+						<a href="#" class=promo-3>Promo 3</a>
+						<a href="#" class=promo-4>Promo 4</a>
+						<a href="#" class=promo-5>Promo 5</a>
+						<a href="#" class=promo-6>Promo 6</a>
+						<a href="#" class=promo-7>Promo 7</a>
+						<a href="#" class=promo-8>Promo 8</a> -->
+					</div>
+				</aside>
+			</div> <!--  cierra contenedor -->
+		</div> <!-- cierra modal-aside --> 
+	<a href="#subir" class="btn-subir">Subir</a>
+
+</body>
+</html>
